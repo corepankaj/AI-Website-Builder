@@ -1,14 +1,18 @@
 import archiver from "archiver";
 
-export const createZip = (res, pages) => {
-  res.attachment("website.zip");
+const createZip = (res, code) => {
+  const archive = archiver("zip", { zlib: { level: 9 } });
 
-  const archive = archiver("zip");
+  res.attachment("website.zip");
   archive.pipe(res);
 
-  for (const fileName in pages) {
-    archive.append(pages[fileName], { name: fileName });
-  }
+  // main file
+  archive.append(code, { name: "index.html" });
+
+  // optional extra files (pro feel)
+  archive.append("/* Add your CSS here */", { name: "style.css" });
+  archive.append("// Add your JS here", { name: "script.js" });
 
   archive.finalize();
 };
+export {createZip};

@@ -1,9 +1,7 @@
 import express from "express";
-import {creteWebsite,downloadWebsite} from "../controller/Controller.js";
-
+import generateWebsite from "../controller/Aicontroller.js";
+import downloadWebsite from "../controller/Download.js";
 const router = express.Router();
-
-router.post("/generate",creteWebsite);
-router.post("/download", downloadWebsite)
-
+router.post("/generate", generateWebsite);
+router.post("/download", downloadWebsite);
 export default router;
