@@ -85,4 +85,4 @@ MIT License
 
 ## 👨‍💻 Author
 
-Pankaj Sinha
+Pankaj Ranjan Sinha
