@@ -8,20 +8,14 @@ export default function Header() {
         
         {/* Logo */}
         <h1 className="text-xl font-bold text-blue-400">
-          PRS Agent
+         
         </h1>
-        <h1 className="text-2xl font-bold">🚀 AI Website Builder</h1>
+        <h1 className="text-2xl font-bold">🚀 AI Website Builder Agent</h1>
 
         {/* Actions */}
         <div className="flex items-center gap-3">
-          
-          <button className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition justify-center">
-            Log Out
-          </button>
-
-          
-
-        </div>
+                          
+       </div>
       </div>
     </header>
   );
