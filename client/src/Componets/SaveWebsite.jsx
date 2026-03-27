@@ -4,7 +4,7 @@ const SaveWebsite = ({code})=>{
 
     const downloadSite = async () => {
         try {
-          const response = await axios.post("http://localhost:5000/api/ai/download",{code},{responseType:"blob"});
+          const response = await axios.post("https://ai-website-builder-m8zs.vercel.app/api/ai/download",{code},{responseType:"blob"});
           const url = window.URL.createObjectURL(new Blob([response.data]));
           const link = document.createElement("a");
     
