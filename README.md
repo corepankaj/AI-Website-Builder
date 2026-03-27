@@ -74,8 +74,6 @@ npm start
 
 ## 📸 Demo
 
-(Add screenshots here)
-
 ---<img width="3744" height="1660" alt="image" src="https://github.com/user-attachments/assets/58dce766-15fd-4d8a-9f09-649949977800" />
 
 
